@@ -1,0 +1,15 @@
+# MANDATORY AI AGENT INSTRUCTIONS
+
+You are taking over the AmourScans project. To ensure continuity and prevent system regression, you MUST follow these steps before taking any action:
+
+1. READ the 'campus/README.md' to understand the architecture and environment.
+2. REVIEW the 'campus/ROADMAP.md' to see the current state and pending tasks.
+3. CONSULT 'campus/KNOWN_ERRORS_AND_FIXES.md' to avoid re-introducing bugs (especially the HTTPS redirect and Replit-plugin issues).
+4. READ the latest session log in 'campus/sessions/' to understand the most recent changes.
+
+POST-SESSION REQUIREMENTS:
+- You MUST document your work in a new session log file: 'campus/sessions/session_XXX_description.md'.
+- You MUST update 'campus/ROADMAP.md' if you complete tasks or discover new issues.
+- You MUST update 'campus/KNOWN_ERRORS_AND_FIXES.md' if you resolve a new critical bug.
+
+Failure to follow this protocol will result in project instability.
