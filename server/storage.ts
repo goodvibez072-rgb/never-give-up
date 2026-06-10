@@ -1554,19 +1554,19 @@ export class DatabaseStorage implements IStorage {
     
     switch (section) {
       case "featured":
-        whereCondition = or(eq(series.isFeatured, "true"), eq(series.isFeatured, "1"), eq(series.isFeatured, sql`true`), eq(series.isFeatured, 1), eq(series.isFeatured, true));
+        whereCondition = or(eq(series.isFeatured, "true"), eq(series.isFeatured, "1"));
         break;
       case "trending":
-        whereCondition = or(eq(series.isTrending, "true"), eq(series.isTrending, "1"), eq(series.isTrending, sql`true`), eq(series.isTrending, 1), eq(series.isTrending, true));
+        whereCondition = or(eq(series.isTrending, "true"), eq(series.isTrending, "1"));
         break;
       case "popularToday":
-        whereCondition = or(eq(series.isPopularToday, "true"), eq(series.isPopularToday, "1"), eq(series.isPopularToday, sql`true`), eq(series.isPopularToday, 1), eq(series.isPopularToday, true));
+        whereCondition = or(eq(series.isPopularToday, "true"), eq(series.isPopularToday, "1"));
         break;
       case "latestUpdate":
-        whereCondition = or(eq(series.isLatestUpdate, "true"), eq(series.isLatestUpdate, "1"), eq(series.isLatestUpdate, sql`true`), eq(series.isLatestUpdate, 1), eq(series.isLatestUpdate, true));
+        whereCondition = or(eq(series.isLatestUpdate, "true"), eq(series.isLatestUpdate, "1"));
         break;
       case "pinned":
-        whereCondition = or(eq(series.isPinned, "true"), eq(series.isPinned, "1"), eq(series.isPinned, sql`true`), eq(series.isPinned, 1), eq(series.isPinned, true));
+        whereCondition = or(eq(series.isPinned, "true"), eq(series.isPinned, "1"));
         break;
       default:
         throw new Error(`Invalid section: ${section}`);
